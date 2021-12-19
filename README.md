@@ -37,7 +37,11 @@ chmod a+x /root/scripts/autoupdate.sh
 ~~~~
 
 ### Agregamos al cron las siguientes lineas para que se ejecuten
-Hemos realizado que cada día se actualice
+Abrimos el cron
+~~~~
+crontab -e
+~~~~
+Y añadimos las líneas, el cron los ejecutará cada día, para está al día de los paquetes
 ~~~~
 00 23 * * * /root/scripts/infoupdates.sh >/dev/null 2>&1
 30 23 * * * /root/scripts/autoupdate.sh >/dev/null 2>&1
