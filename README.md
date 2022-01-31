@@ -45,8 +45,10 @@ Y añadimos las líneas, el cron los ejecutará cada día, para está al día de
 ~~~~
 00 23 * * * /root/scripts/infoupdates.sh >/dev/null 2>&1
 30 23 * * * /root/scripts/autoupdate.sh >/dev/null 2>&1
-00 04 * * * /sbin/shutdown -r +5
 ~~~~
-
+Y reinciamos el cron:
+~~~
+service cron restart 
+~~~
 El funcionamiento es sencillo, cada día se actualice y nos informará de las actualizaciones.
 ### Ready!
