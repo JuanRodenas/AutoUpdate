@@ -11,7 +11,7 @@ Empezamos a instalar el bot de inicio. Para que funcione necesita permisos, por 
 ~~~~
 sudo apt update
 sudo apt upgrade -y
-sudo apt curl -y
+sudo apt install curl -y
 ~~~~
 
 ### Edita el script infoupdates.sh, para añadir tu token de bot, y tu chat_id
