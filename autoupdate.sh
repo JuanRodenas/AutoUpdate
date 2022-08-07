@@ -8,6 +8,8 @@ sudo apt update && sudo apt upgrade -y > /dev/null 2>&1
 sudo apt-get full-upgrade -y > /dev/null 2>&1
 # Elimino software y librerias innecesarias
 sudo apt-get -y autoremove && sudo apt clean > /dev/null 2>&1
+# liberamos RAM
+sync; echo 3 > /proc/sys/vm/drop_caches
 
 # requeriments:
 TOKEN="YOUR_TOKEN_BOT"
