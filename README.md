@@ -32,7 +32,7 @@ TOKEN_ID="YOUR_TOKEN_CHAT"
 
 ### Asigna los permisos a+x
 ~~~~
-chmod a+x /root/scripts/infoupdates.sh
+chmod a+x /root/scripts/infoupdates.sh && \
 chmod a+x /root/scripts/autoupdate.sh
 ~~~~
 
